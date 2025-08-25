@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "obase=10; ibase=2; $BINARY" | bc
+python3 -c "print(int('$BINARY', 2))"
