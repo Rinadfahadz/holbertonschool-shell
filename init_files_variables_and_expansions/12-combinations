@@ -1,3 +1,2 @@
 #!/bin/bash
-for i in {a..z};do for j in {a..z};do [ $i$j != oo ]&&echo $i$j;done;done
-
+tr -d o <<< {a..z}{a..z} | fold -w2
